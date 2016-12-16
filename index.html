@@ -13,8 +13,28 @@
     <h1>~⚔SWORDS⚔~</h1>
     <hr>
     <div class="container">
-      <a href = "/users.html?id=4" class = "btn btn-danger">Cole Sword</a>
-      <a href = "/users.html?id=3" class = "btn btn-info">Phil Sword</a>
+      <div class="users">
+
+      </div>
     </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
+    <script src="javascripts/index.js" type="text/javascript"></script>
+
+    <script id="allUsers-template" type="text/x-handlebars-template">
+          {{#each users}}
+          <div class = "row">
+            <div class="col-sm-6 col-sm-offset-2">
+
+              <p>{{email}}</p>
+            </div>
+            <div class="col-sm-2">
+              <a href = "/users.html?id={{id}}" class = "btn btn-info">See Sword</a>
+            </div>
+          </div>
+          {{/each}}
+    </script>
   </body>
 </html>

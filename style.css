@@ -33,3 +33,10 @@ hr{
     opacity : 0.2;
     z-index: -1;
 }
+.row {
+  padding-top: 1em;
+}
+p{
+  font-size: 2em;
+  text-decoration: underline;
+}

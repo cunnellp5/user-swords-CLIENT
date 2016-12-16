@@ -32,6 +32,17 @@
     <script id="user-template" type="text/x-handlebars-template">
       <h2>{{email}}</h2>
     </script>
+    <script id="sword-template" type="text/x-handlebars-template">
+        <div class = "row">
+          {{#each swords}}
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img src = {{img_url}}>
+            </div>
+          </div>
+          {{/each}}
+      </div>
+    </script>
 
     <script id="sword-template" type="text/x-handlebars-template">
         <div class = "row">
