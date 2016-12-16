@@ -20,7 +20,7 @@ function parseQueryString (str){
 }
 
 function getUserInfo (id){
-  return $.get(`http://localhost:3000/users/${id}`)
+  return $.get(`${API_URL}/users/${id}`)
 }
 
 function showUserInfo(users) {
@@ -33,7 +33,7 @@ function showUserInfo(users) {
 }
 
 function getSwordsInfo (id){
-  return $.get(`http://localhost:3000/users/${id}/swords`)
+  return $.get(`${API_URL}/users/${id}/swords`)
 }
 
 function showSwordsInfo (swords){
